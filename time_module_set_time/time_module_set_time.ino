@@ -5,16 +5,15 @@ GyverDS3231 ds;
 void setup() {
     Serial.begin(115200);
     Wire.begin();
-    if (!ds.begin()) ds.setBuildTime();
-    Datime dt;
-    
-    dt.year = 2025;
-    dt.month = 1;
-    dt.day = 18;
-    dt.hour = 17;
-    dt.minute = 1;
-    dt.second = 40;
-    ds.setTime(dt);
+    ds.begin();
+    //Datime dt;
+    //dt.year = 2025;
+    //dt.month = 1;
+    //dt.day = 18;
+    //dt.hour = 18;
+    //dt.minute = 49;
+    //dt.second = 0;
+    //ds.setTime(dt);
 }
 
 void loop() {
